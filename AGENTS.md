@@ -27,7 +27,7 @@ Read [README.md](README.md) for setup and host smoke tests. Public ODE documenta
 | Host index configuration | `app/public/app.config.json` |
 | Offline illustration and ODE logo | `app/public/assets/` |
 | Form validation and bundle scripts | `app/scripts/` |
-| Build, CI and manual deployment | `.github/workflows/` |
+| Build, CI and deployment | `.github/workflows/` |
 | Student exercises, easy to hard | `Issue_1.md` through `Issue_4.md` |
 
 ## Keep it small and safe
@@ -92,9 +92,9 @@ The bundle is `app-bundles/bundle-v1.0.0.zip` at the current version, with an `a
 
 ## CI and deployment
 
-The workflows are adapted from GBMIS: reusable bundle build, CI on `main`/`dev`, and **manual-only** deployment. Preserve the manual deployment trigger unless explicitly asked otherwise.
+The workflows are adapted from GBMIS: reusable bundle build, CI on `main`/`dev`, and **automatic deployment on every push to main**, with manual deployment also available. Preserve both triggers unless explicitly asked otherwise.
 
-Deployment needs repository secrets `DEV_SYNK_URI`, `DEV_SYNK_ADMIN` and `DEV_SYNK_PASSWORD`. Never hardcode credentials. Uploading and activating a bundle replaces the active app on that Synkronus server: use a separate server/environment for each group. Do not deploy as part of routine validation.
+Deployment needs repository secrets `DEV_SYNK_URI`, `DEV_SYNK_ADMIN` and `DEV_SYNK_PASSWORD`. Never hardcode credentials. Uploading and activating a bundle replaces the active app on that Synkronus server: use a separate server/environment for each group. Do not deploy as part of routine validation. Pushing to main triggers deployment, so push only when explicitly asked and make the deployment impact clear.
 
 ## Workshop exercises
 

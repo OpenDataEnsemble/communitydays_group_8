@@ -52,7 +52,7 @@ The bundle is `app-bundles/bundle-v1.0.0.zip`, containing `app/` with the web ap
 
 ## GitHub Actions and deployment
 
-The three workflows are copied/adapted from GBMIS: reusable bundle build, CI on main/dev, and deployment. **Deployment is manual-only**, via Actions → Deploy Community App → Run workflow. Configure repository secrets `DEV_SYNK_URI`, `DEV_SYNK_ADMIN`, `DEV_SYNK_PASSWORD`. This uploads and activates the bundle, replacing the active custom app on that server. **Give each group its own Synkronus server/environment**; eight bundles on one server would overwrite one another. Keep secrets out of source. No deployment has been performed.
+The three workflows are copied/adapted from GBMIS: reusable bundle build, CI on main/dev, and deployment. **Deployment runs automatically on every push to main**. Manual deployment is also available via Actions → Deploy Community App → Run workflow. Configure repository secrets `DEV_SYNK_URI`, `DEV_SYNK_ADMIN`, `DEV_SYNK_PASSWORD`. This uploads and activates the bundle, replacing the active custom app on that server. **Give each group its own Synkronus server/environment**; eight bundles on one server would overwrite one another. Keep secrets out of source. A push to main builds, uploads and activates the bundle when the required secrets are configured.
 
 ## Host smoke test
 

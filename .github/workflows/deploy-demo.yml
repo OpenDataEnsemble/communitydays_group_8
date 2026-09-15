@@ -1,7 +1,9 @@
 name: Deploy Community App
 
-# Manual only: configure DEV_SYNK_URI, DEV_SYNK_ADMIN and DEV_SYNK_PASSWORD first.
+# Configure DEV_SYNK_URI, DEV_SYNK_ADMIN and DEV_SYNK_PASSWORD before pushing to main.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 env:
