@@ -1,0 +1,55 @@
+{
+  "title": "Music App",
+  "theme": "Music",
+  "entity": "music act",
+  "plural": "music acts",
+  "registerLabel": "Register music act",
+  "followUpLabel": "Record a rehearsal",
+  "registrationForm": "group_8_registration",
+  "followUpForm": "group_8_followup",
+  "description": "Meet the acts, celebrate their sound and keep track of the next great rehearsal.",
+  "accent": "#a33449",
+  "background": "#fff0f2",
+  "columns": [
+    {
+      "key": "name",
+      "label": "Act name"
+    },
+    {
+      "key": "genre",
+      "label": "Genre"
+    },
+    {
+      "key": "members",
+      "label": "Number of members"
+    }
+  ],
+  "registrationFields": [
+    {
+      "key": "name",
+      "label": "Act name"
+    },
+    {
+      "key": "genre",
+      "label": "Genre"
+    },
+    {
+      "key": "members",
+      "label": "Number of members"
+    }
+  ],
+  "followUpFields": [
+    {
+      "key": "song",
+      "label": "Song rehearsed"
+    },
+    {
+      "key": "minutes",
+      "label": "Rehearsal length in minutes"
+    },
+    {
+      "key": "readiness",
+      "label": "Performance readiness"
+    }
+  ]
+}

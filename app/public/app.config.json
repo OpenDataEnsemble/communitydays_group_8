@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ode.dev/schemas/app-config-v1.json",
+  "name": "Music App",
+  "version": "1.0.0",
+  "observationIndexes": [
+    {
+      "key": "entity_id",
+      "path": "$.entity_id",
+      "formTypes": [
+        "group_8_followup"
+      ],
+      "enableExpressionIndex": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Act name",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "genre": {
+      "type": "string",
+      "title": "Genre",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "members": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "title": "Number of members"
+    }
+  },
+  "required": [
+    "name",
+    "genre",
+    "members"
+  ]
+}

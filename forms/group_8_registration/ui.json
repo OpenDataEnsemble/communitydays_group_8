@@ -1,0 +1,20 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/name",
+      "label": "Act name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/genre",
+      "label": "Genre"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/members",
+      "label": "Number of members"
+    }
+  ]
+}

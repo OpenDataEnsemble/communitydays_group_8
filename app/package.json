@@ -1,0 +1,31 @@
+{
+  "name": "communitydays-group-8",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "npm run copy:forms && vite",
+    "validate:forms": "node scripts/validate-forms.cjs",
+    "copy:forms": "npm run validate:forms && node scripts/copy-forms.cjs",
+    "build": "npm run copy:forms && vite build && node scripts/copy-build.cjs",
+    "zip": "node scripts/build-zip.cjs",
+    "test": "node --test scripts/*.test.cjs && npm run test:hooks",
+    "test:hooks": "vitest run src/useObservations.test.js"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "ajv": "^8.17.1",
+    "archiver": "^7.0.1",
+    "happy-dom": "^20.14.5",
+    "vite": "^7.0.0",
+    "vitest": "^5.0.1"
+  }
+}

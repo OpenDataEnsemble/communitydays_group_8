@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "song": {
+      "type": "string",
+      "title": "Song rehearsed",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "minutes": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 600,
+      "title": "Rehearsal length in minutes"
+    },
+    "readiness": {
+      "type": "string",
+      "enum": [
+        "Learning",
+        "Nearly there",
+        "Stage ready"
+      ],
+      "title": "Performance readiness"
+    },
+    "entity_id": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "entity_id",
+    "song",
+    "minutes",
+    "readiness"
+  ]
+}

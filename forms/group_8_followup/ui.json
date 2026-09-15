@@ -1,0 +1,20 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/song",
+      "label": "Song rehearsed"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/minutes",
+      "label": "Rehearsal length in minutes"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/readiness",
+      "label": "Performance readiness"
+    }
+  ]
+}
