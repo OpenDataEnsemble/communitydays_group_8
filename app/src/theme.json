@@ -1,5 +1,5 @@
 {
-  "title": "Music App",
+  "title": "Prime Muzik",
   "theme": "Music",
   "entity": "music act",
   "plural": "music acts",
@@ -7,9 +7,9 @@
   "followUpLabel": "Record a rehearsal",
   "registrationForm": "group_8_registration",
   "followUpForm": "group_8_followup",
-  "description": "Meet the acts, celebrate their sound and keep track of the next great rehearsal.",
-  "accent": "#a33449",
-  "background": "#fff0f2",
+  "description": "Set the Mood. Play the Music.",
+  "accent": "#F59E0B",
+  "background": "#10B981",
   "columns": [
     {
       "key": "name",
@@ -50,6 +50,10 @@
     {
       "key": "readiness",
       "label": "Performance readiness"
+    },
+    {
+      "key": "description",
+      "label": "Short description"
     }
   ]
 }
